@@ -447,7 +447,7 @@ a{
   margin-top: 30px;
 }
 
-.skills h2 {
+.skills h2 {  
   margin-bottom: 15px;
   color: var(--accent);
 }
@@ -563,6 +563,14 @@ body {
     .main-nav .dropdown:hover .dropdown-menu {
         transform: translate(-50%, 0);
     }
+    
+    /* ADDED: MyGalleryContent responsive styles for 880px */
+    .mygallerycontent {
+        width: 95%;
+        max-width: 95%;
+        padding: 15px;
+        margin-top: 15px;
+    }
 }
 
 /* For very small screens - NEW */
@@ -574,5 +582,12 @@ body {
     .main-nav a {
         padding: 6px 10px;
         font-size: 13px;
+    }
+    
+    /* ADDED: MyGalleryContent responsive styles for 480px */
+    .mygallerycontent {
+        width: 95%;
+        padding: 10px;
+        margin-top: 10px;
     }
 }
