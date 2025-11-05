@@ -50,9 +50,9 @@ a{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:18px 32px; 
+    padding: 12px 18px;; 
     max-width:var(--max-width);
-    margin:20px auto;
+    margin: 10px auto;;
     background:var(--panel);
     border-radius: var(--radius);
     /* Neumorphism effect */
@@ -66,7 +66,7 @@ a{
 .brand-left{
     display:flex; 
     align-items:center; 
-    gap:12px
+    gap:8px
 }
 .mini-avatar{
     width:44px; 
@@ -86,10 +86,12 @@ a{
 .main-nav ul{
     list-style:none; 
     display:flex; 
-    gap:18px;
+    gap:10px;
     margin:0; 
     padding:0; 
-    align-items:center
+    align-items:center;
+    flex-wrap: wrap; 
+        justify-content: center;
 }
 .main-nav li{
     position:relative
@@ -115,6 +117,8 @@ a{
     padding: 8px 10px;
     border-radius: 8px;
     cursor: pointer;
+    transform: none; /* Reset vertical translation */
+        top: 40px;
 }
 .dropdown-menu{
     position:absolute;
@@ -144,8 +148,8 @@ a{
     max-width:var(--max-width);
     margin:12px auto;
     display:grid;
-    grid-template-columns:360px 1fr; 
-    gap:24px; padding:20px
+    grid-template-columns: 1fr; 
+    gap:15px; padding:12px
 }
 .left-column{
     display:flex;
@@ -325,7 +329,8 @@ a{
 
 .split-page{
     display:flex; 
-    min-height:100vh
+    flex-direction: column;
+    min-height:auto;
 }
 .left-panel{
     flex:1;
@@ -333,10 +338,12 @@ a{
     color: var(--text);
     display:flex; 
     align-items:center; 
-    justify-content:center
+    min-height: 40vh; /* Keep some height for visual balance */
+    padding: 30px 15px;
+    justify-content:flex-start;
 }
 .left-panel .brand{
-    padding:40px
+    padding:20px
 }
 .right-panel{
     flex:1;
@@ -345,12 +352,15 @@ a{
     align-items:center; 
     justify-content:center;
     background: var(--bg);
+    padding-top: 50px;
+
 }
 .card{
     background:var(--card); 
     padding:20px; 
     border-radius:12px; 
-    width:320px;
+    width:90%;
+    max-width: 350px;
     /* Neumorphism effect */
     box-shadow: 8px 8px 16px var(--shadow-dark), 
                -8px -8px 16px var(--shadow-light);
@@ -399,6 +409,8 @@ a{
     margin-top:20px; 
     border-radius:10px; 
     overflow:hidden;
+    width: 95%; /* Adjust width to fit mobile screen */
+    max-width: none;
     /* Neumorphism effect */
     box-shadow: 10px 10px 15px var(--shadow-dark), 
                -5px -5px 10px var(--shadow-light);
@@ -417,18 +429,18 @@ a{
 }
 
 .gallery{
-    display:flex; 
-    gap:12px
+   flex-direction: column; /* Stack gallery images */
+        gap: 10px;
 }
 .gallery img{
-    width:30%; 
+  width: 100%;
     border-radius:8px;
     /* Neumorphism effect */
     box-shadow: 5px 5px 10px var(--shadow-dark), 
                -5px -5px 10px var(--shadow-light);
 }
 .meduim-img {
-    width: 40%;
+    width: 100%;
     height: auto;
 }
 .btn-container {
