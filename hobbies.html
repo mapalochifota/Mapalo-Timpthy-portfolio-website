@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hobbies - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="icon.png">
+</head>
+<body>
+  <div class="cursor"></div>
+  <header class="site-header small">
+    <div class="brand-left">
+      <img src="icon.png" alt="profile" class="mini-avatar">
+      <span class="name">Mapalo Chifota</span>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <nav class="main-nav">
+      <ul>
+        <li class="dropdown"><a href="#">Academic Results</a>
+          <ul class="dropdown-menu">
+            <li><a href="year1.html">Year 1 Results</a></li>
+            <li><a href="year2.html">Year 2 Results</a></li>
+            <li><a href="year3.html">Year 3 Results</a></li>
+            <li><a href="year4.html">Year 4 Results</a></li>
+          </ul>
+        </li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="CareerGoals.html">CareerGoals</a></li>
+        <li><a href="index.html">Logout</a></li>
+      </ul>
+    </nav>
+
+      </ul>
+    </nav>
+  </header>
+
+  <main class="content">
+    <div class="Hobbies">
+      <h1>Hobbies</h1>
+        <p>I enjoy Playing games, football,Graphics design and listening to music. Below is a small gallery and a short audio clip (placeholder).
+        below is a small list of games i enjoy playing,programing language know ,and other intrests.
+      </p>
+      <div class = "mygallerycontent">
+        <div class="gallery" id="slideshow"> 
+          <button class="prev" onclick="changeSlide(-1)">❮</button>
+        <div class="slidegallery">
+          <img class="slide active" src="download.jpg" alt="Photo 1">
+          <img class="slide" src="ps4controller.jpg" alt="Photo 2">
+          <img class="slide" src="uncharted.jpg" alt="Photo 3">
+          <img class="slide" src="download (5).jpeg" alt="Photo 4">
+          <img class="slide" src="HD wallpaper_ Python (programming), programming language, code.jpeg" alt="Photo 5"> 
+        </div>
+        <button class="next" onclick="changeSlide(1)">❯</button>
+        </div>
+      </div>
+    </div><br><br>
+    
+    <h7>Music</h7>
+        <p>Below is a song i enjoy listening to, Hope you enjoy it too!</p>
+        <div class ="mymusic">
+        <audio controls>
+          <source src="Sondae - Deeper.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+  </main>
+
+  <footer class="site-footer">© 2025 Mapalo Chifota</footer>
+  <script src="script.js"></script>
+</body>
+</html>

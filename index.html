@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Student portfolio - login page">
+  <link rel="icon" href="icon.png">
+</head>
+<body class="split-page">
+  <div class="cursor"></div>
+  <aside class="left-panel">
+    <div class="brand">
+      <h1>Mapalo Chifota</h1>
+      <p>Web Developer Portfolio</p>
+    </div>
+  </aside>
+
+ 
+
+  <main class="right-panel">
+    <div class="card login-card">
+      <h2>Please sign in</h2>
+      <form id="loginForm" onsubmit="return handleLogin(event)">
+        <label>Username</label>
+        <input id="username" type="text" placeholder="Enter username" />
+        <small id="usernameError" class="error">Username must be at least 4 characters.</small>
+
+        <label>Password</label>
+        <input id="password" type="password" placeholder="Enter password" />
+        <small id="passwordError" class="error">Password must be at least 6 characters.</small>
+
+
+          <div class="remeberMe">
+            <label class="remember-me">Remember me</label>
+         <input type="checkbox">
+         
+         </div>
+        
+        <center><button type="submit" class="btn">Login</button></center>
+      </form>
+    
+    </div>
+    <footer class="centered">© 2025 Mapalo Chifota</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Home - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="icon.png">
+</head>
+<body>
+  <div class="cursor"></div>
+  <header class="site-header">
+    <div class="brand-left">
+      <img src="icon.png" alt="profile" class="mini-avatar">
+      <span class="name">BIT23120336</span>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li class="dropdown"><a href="#">Academic Results</a>
+          <ul class="dropdown-menu">
+            <li><a href="year1.html">Year 1 Results</a></li>
+            <li><a href="year2.html">Year 2 Results</a></li>
+            <li><a href="year3.html">Year 3 Results</a></li>
+            <li><a href="year4.html">Year 4 Results</a></li>
+          </ul>
+        </li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="CareerGoals.html">CareerGoals</a></li>
+        <li><a href="index.html">Logout</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="home-grid">
+    <section class="left-column">
+      <div class="profile-card">
+        <img src="WhatsApp .jpg" alt="Profile picture" class="avatar-large">
+        <h2>Mapalo Chifota</h2>
+        <p class="bio">A semi-professional web developer student building modern, 
+          responsive websites. This portfolio follows assignment requirements .</p>
+        <p class="live-time" id="liveTime">Loading date & time...</p>
+      </div>
+      <div class="slideshow" id="slideshow">
+        <button class="prev" onclick="changeSlide(-1)">❮</button>
+        <div class="slides">
+          <img class="slide active" src="Coding Wallpaper 4K For Mobile Trick.jpeg" alt="Slide 1">
+          <img class="slide" src="HD wallpaper_ Python (programming), programming language, code.jpeg" alt="Slide 2">
+          <img class="slide" src="Master Tailwind CSS in easy way.jpeg" alt="Slide 3">
+          <img class="slide" src="cloud.jpeg" alt="Slide 4">
+          <img class="slide" src="networking.jpeg" alt="Slide 5">
+        </div>
+        <button class="next" onclick="changeSlide(1)">❯</button>
+        <div class="dots" id="dots"></div>
+      </div>
+    </section>
+
+
+    <section class="right-column">
+      <h3>Site walkthrough</h3>
+      <p>Watch the (placeholder) walkthrough below explaining navigation and features. </p>
+      <video id="walkthrough" controls width="70%" src="assignmentvideo.mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <section class="quick-links">
+        <h4>Quick links</h4>
+        <div class="cards">
+          <a class="card" href="profile.html">Profile & Results</a>
+          <a class="card" href="page1.html">Contact </a>
+          <a class="card" href="hobbies.html">Hobbies</a>
+          <a class="card" href="https://github.com/">GitHub</a>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">© 2025 Mapalo Chifota — Built for BIT315</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
